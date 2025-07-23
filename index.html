@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cara's Portfolio</title>
+    <!-- files -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font
+awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font
+awesome.min.css"
+    />
+    <!-- css file -->
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar-bar">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <!-- when u put '#' it finds the element with the about id  -->
+          <a class="navbar-brand" href="#about">Portfolio</a>
+
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data
+            target="#myNavbar"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <!-- Ctrl + click the "#about", you will be lead to the "about" section  -->
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- About Me -->
+    <section id="about" class="section-1">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 has-text-centered">
+            <img class="avatar" src="images/headshot.jpg" />
+          </div>
+          <div class="col-md-6" style="padding-top: 20px">
+            <h1 class="intro">Hi! I'm Cara Sim</h1>
+            <p class="intro2">
+              I am skilled in HTML, CSS, JavaScript, and UI/UX design tools like
+              Figma and Bootstrap, allowing me to create responsive and
+              user-friendly websites. Beyond technical skills, I bring strong
+              problem-solving abilities, effective communication, and a
+              collaborative mindset that helps me work well in team settings and
+              adapt to new challenges. My relavant coursework and modules
+              include: Data Structures and Algorithm (Python), Cloud Application
+              Development (AWS), User Experience and Interface Design, Agile
+              Methodology and Design Thinking (SCRUM), Mobile App Development
+              (Flutter and Dart), DevOps Essentials (GitHub & User Testing),
+              Full Stack Web Development (React.js)
+            </p>
+            <a
+              href="https://www.linkedin.com/in/cara-sim-ba5649238/"
+              target="_blank"
+              class="fa fa-linkedin"
+            ></a>
+            <a
+              href="mailto:carasim80@gmail.com"
+              target="_blank"
+              class="fa fa google"
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section-2">
+      <div class="container">
+        <div class="educationTitle has-text-centered">
+          <h1>Education</h1>
+        </div>
+
+        <div class="tab">
+          <button
+            class="tablinks"
+            onclick="eduHistory(event, 'Poly')"
+            id="defaultOpen"
+          >
+            April 2020 - Present
+          </button>
+          <button class="tablinks" onclick="eduHistory(event, 'Sec')">
+            2016 - 2020
+          </button>
+          <button class="tablinks" onclick="eduHistory(event, 'Pri')">
+            2010 - 2015
+          </button>
+        </div>
+
+        <div id="Poly" class="tabcontent">
+          <h1 style="font-weight: bold">Hello World Polytechnic</h1>
+          <h4 id="EduLvl">Diploma in Hello World</h4>
+          <br />
+          <p>2021-2022: President of the Tennis Club</p>
+          <p>2022: CCA Service Award</p>
+          <p>2022: Edusave EAGLES Award</p>
+        </div>
+
+        <div id="Sec" class="tabcontent">
+          <h1 style="font-weight: bold">Hello World Secondary School</h1>
+          <h4 id="EduLvl">'N’ &amp ‘O’ Level Examination</h4>
+          <br />
+          <p>2019-2020: President of the IT Club</p>
+          <p>2019: CCA Service Award</p>
+          <p>2018-2019: Edusave EAGLES Award</p>
+          <p>2016-2019: Edusave Scholarship Award</p>
+        </div>
+
+        <div id="Pri" class="tabcontent">
+          <h1 style="font-weight: bold">Hello World Primary School</h1>
+          <h4 id="EduLvl">PSLE Examination</h4>
+          <br />
+          <p>2013-2015: Member of the Dance Club</p>
+          <p>2015: CCA Service Award</p>
+          <p>2014-2015: Edusave EAGLES Award</p>
+          <p>2014-2015: Edusave Scholarship Award</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section-3">
+      <div class="container">
+        <div class="has-text-centered">
+          <h1>Projects</h1>
+        </div>
+        <!-- Project 1 -->
+        <div class="row carousel-section">
+          <div class="col-md-6">
+            <h3 style="font-weight: bold">Project 1</h3>
+            <p>
+              This project allows users to order their food easily. <br />
+              Programming language/language used: HTML, CSS and JavaScript.
+              <br />
+              Software used: Visual Studio Code.
+            </p>
+          </div>
+          <!-- carousel slides -->
+          <div class="col-md-6 carousel-content">
+            <div style="max-width: 600px">
+              <img class="mySlides" src="images/carousel-pic-1.jpg" />
+              <img class="mySlides" src="images/carousel-pic-2.jpg" />
+              <img class="mySlides" src="images/carousel-pic-3.jpg" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="row">
+          <div class="col-md-10">
+            <h3 style="font-weight: bold">Project 2</h3>
+            <p>
+              This project allows users to order their food easily. <br />
+              Programming language/language used: HTML, CSS and JavaScript.
+              <br />
+              Software used: Visual Studio Code.
+            </p>
+          </div>
+          <div class="col-md-2">
+            <a
+              href="https://www.w3schools.com/"
+              target="_blank"
+              class="viewProjectBtn"
+              ><span>View Project </span></a
+            >
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="row">
+          <div class="col-md-10">
+            <h3 style="font-weight: bold">Project 3</h3>
+            <p>
+              This project allows users to order their food easily. <br />
+              Programming language/language used: HTML, CSS and JavaScript.
+              <br />
+              Software used: Visual Studio Code.
+            </p>
+          </div>
+          <div class="col-md-2">
+            <a
+              href="https://www.w3schools.com/"
+              target="_blank"
+              class="viewProjectBtn"
+              ><span>View Project </span></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section id="certifications" class="section-4">
+      <div class="container">
+        <div class="has-text-centered">
+          <h1>Certifications</h1>
+        </div>
+        <div class="row">
+          <div class="col-md-10">
+            <h3>
+              <span style="color: #ffd700" class="fa fa-certificate"></span>
+              Certification Name 1
+            </h3>
+          </div>
+          <div class="col-md-2">
+            <a
+              href="https://www.w3schools.com/"
+              target="_blank"
+              class="viewCredentialBtn"
+              ><span>View Credential </span></a
+            >
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-10">
+            <h3>
+              <span style="color: #ffd700" class="fa fa-certificate"></span>
+              Certification Name 2
+            </h3>
+          </div>
+          <div class="col-md-2">
+            <a
+              href="https://www.w3schools.com/"
+              target="_blank"
+              class="viewCredentialBtn"
+              ><span>View Credential </span></a
+            >
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-10">
+            <h3>
+              <span style="color: #ffd700" class="fa fa-certificate"></span>
+              Certification Name 3
+            </h3>
+          </div>
+          <div class="col-md-2">
+            <a
+              href="https://www.w3schools.com/"
+              target="_blank"
+              class="viewCredentialBtn"
+              ><span>View Credential </span></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer --> 
+        <section id="footer" class="section section-5"> 
+            <div class="container has-text-centered"> 
+                <h4 style="color: white;">THANK YOU FOR VISITING MY WEB PORTFOLIO!</h4> 
+            </div> 
+        </section>
+
+    <script src="js/actions.js"></script>
+  </body>
+</html>
